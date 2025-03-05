@@ -1,0 +1,176 @@
+/* -------------------------- */
+/* Global Custom Properties   */
+/* -------------------------- */
+:root {
+    /* Color Palette */
+    --primary-color: #0650aa;
+    --primary-hover: #03397c;
+    --secondary-color: #ff4081;
+    --headline-color: #2c3e50;
+    --text-color: #34495e;
+    --hover-color: #e55b50;
+    --white: #fff;
+  
+    /* Navbar */
+    --navbar-shadow: rgba(0, 0, 0, 0.1);
+    
+    /* Sizing */
+    --site-margin: 30px;
+    --site-sub-margin: -10px;
+    --padding-small: 10px;
+    --padding-medium: 20px;
+    --padding-large: 30px;
+    --border-radius: 10px;
+  }
+  
+    /* -------------------------- */
+  /* Navbar Styles              */
+  /* -------------------------- */
+  
+  /* Navbar Container */
+  .navbar {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    padding: var(--padding-small) var(--padding-medium);
+    color: var(--white);
+    box-shadow: 0 2px 4px var(--navbar-shadow);
+  }
+
+  /* Flex container for content */
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Logo styling */
+  .navbar-logo a {
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* Menu items */
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Navigation links */
+  .navbar-link, .logout-button {
+    margin-right: 15px;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover, .logout-button:hover {
+    color: #000;
+  }
+  
+  /* User greeting */
+  .navbar-user {
+    margin-right: 15px;
+    font-size: 1rem;
+  }
+  
+    /* -------------------------- */
+  /* Welcome Page Styles        */
+  /* -------------------------- */
+
+  .welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  
+  /* Container for the entire welcome page */
+  .welcome-wrapper {
+    display: flex;
+    align-items: center;
+    padding: var(--padding-medium);
+    max-width: 940px;
+    margin: 0 auto;
+    gap: var(--padding-medium);
+  }
+
+  .applogo {
+    margin-top: -20px;
+    margin-bottom: -30px;
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Left side image section */
+  .image-section {
+    flex: 1;
+    margin-top: 30px;
+    padding-right: var(--padding-medium);
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+  }
+  
+  /* Right side content section */
+  .content-section {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .greeting {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+  }
+  
+  .headline {
+    font-size: 2.5rem;
+    margin-bottom: var(--site-sub-margin);
+    color: var(--primary-color);
+    text-align: left;
+  }
+  
+  .intro-text {
+    font-size: 1.2rem;
+    margin-bottom: var(--padding-large);
+    color: var(--text-color);
+    line-height: 1.6;
+  } 
+  
+  .start-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: var(--primary-hover);
+  }
+    
+  /* Responsive adjustments: hide image on mobile */
+  @media (max-width: 768px) {
+    .welcome-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image-section {
+      display: none;
+    }
+  
+    .content-section {
+      padding: 0;
+    }
+  }

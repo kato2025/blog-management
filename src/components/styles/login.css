@@ -1,0 +1,97 @@
+/* Define custom properties (CSS Variables) for easy theming */
+:root {
+    --primary-color: #0078d4; /* Corporate Blue */
+    --primary-hover: #03397c;
+    --button-colour: #316ef3;
+    --secondary-color: #ff5b77; /* Gen Z Pink */
+    --background-color: #f0f0f5;
+    --input-background: #ffffff;
+    --button-color: #00c2a2;
+    --button-hover-color: #008f7b;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --border-radius: 8px;
+    --transition-duration: 0.3s;
+    --padding: 1rem;
+  }
+  
+  /* Main container */
+  .loginform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 440px;
+    height: 70vh;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+  }
+
+  /* Logo styling */
+  .loginheader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .applogo {
+    width: 40%;
+    height: auto;
+  }
+
+  .login {
+    margin-top: 30px;
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  /* Input fields styling */
+  input {
+    width: 100%;
+    padding: var(--padding);
+    margin-bottom: 1.5rem;
+    border: 2px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: all var(--transition-duration);
+    background-color: var(--input-background);
+  }
+  
+  input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+  
+  /* Button styling */
+  .loginuser {
+    background-color: var(--button-colour);
+    color: white;
+    padding: var(--padding);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color var(--transition-duration);
+  }
+  
+  .loginuser:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  /* Footer or additional links (optional) */
+  .footer-links {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+  }
+  
+  .footer-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
