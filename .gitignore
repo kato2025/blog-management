@@ -1,0 +1,3 @@
+# Keep these folders and files out of version control
+/node_modules
+App.test.js
